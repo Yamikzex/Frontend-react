@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+.section-image {
+    width: fit-content; /* Ajustar el ancho al contenido */
+    display: inline-block; /* Para que el contenedor se ajuste al tamaño de la imagen */
+    position: relative; /* Agregar posición relativa para que el contenedor de la imagen sea el contexto de la sombra */
+    margin-left: 200px;
+  }
+  
+  .section-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajustar el ancho al 100% del contenedor */
+    height: 100%; /* Ajustar la altura al 100% del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.596); /* Aplicar sombra alrededor de la imagen */
+    z-index: -1; /* Colocar la sombra detrás de la imagen */
+  }
+  
+  
+.section-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Cambiado de 70% a 100% */
+    align-items: flex-end; /* Centrar los cards horizontalmente */
+}
+
+.card {
+
+    display: flex;
+    width: 100%;
+    max-width: 650px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease; /* Transición suave para el sombreado */
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombreado al pasar el mouse */
+    background-color: #0000002f;
+  }
+
+  .selected {
+    background-color: #0000002f;
+  }
+  
+.card-title {
+    display: flex;
+    width: 100%; /* Cambiado de 650px a 100% */
+    max-width: 650px; /* Establecer un ancho máximo */
+    height: 210px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
+    overflow: hidden;
+}
+.card-button {
+    display: flex;
+    width: 100%; /* Cambiado de 650px a 100% */
+    max-width: 650px; /* Establecer un ancho máximo */
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
+    overflow: hidden;
+}
+
+  
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .text-content {
+    padding: 20px;
+    width: calc(100% - 100px);
+  }
+  
+  .title {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    font-family: "Roboto";
+  }
+
+  .text-content-title {
+    padding: 200px;
+    width: calc(100% - 100px);
+  }
+  .title-principal {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+  
+  .subtitle {
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: "Roboto";
+  }
+
+  .button-YbY {
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
+    margin-left: 180px;
+    margin-top: 115px;
+  }
+  
+  .primary-VFt {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+
+  }
