@@ -37,7 +37,13 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  border: 2px dashed #ccc; /* Añade un borde punteado */
 }
+
+.section-zuU.drag-over {
+  border-color: #333; /* Cambia el color del borde cuando se arrastra un archivo */
+}
+
 
 
 
@@ -56,11 +62,12 @@
   margin-top: 20px;
 }
 
-.button-YbY {
-  margin-top: 20px;
-  width: 200px;
+.button-YbY-extraer  {
+  margin-top: 40px;
+  width: 250px;
   text-align: center;
-  margin-left: 80px;
+  margin-left: 60px;
+  margin-bottom: 30px;
 }
 
 .primary-VFt {
@@ -168,7 +175,7 @@
 
 
 /* HowItWorks Component */
-.section-container {
+.section-container2 {
   display: flex;
   align-items: center;
   margin-top: 100px;
@@ -192,7 +199,7 @@
   width: 70%;
 }
 
-.card {
+.card2 {
   display: flex;
   width: 650px;
   height: 180px;
@@ -200,6 +207,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
   overflow: hidden;
   margin-bottom: 20px;
+  margin-right: 120px;
 }
 
 .content-wrapper {

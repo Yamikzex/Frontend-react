@@ -1,7 +1,17 @@
-import React, { useState } from 'react';
+// PageResult.js
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const PageResult = () => {
+  const location = useLocation();
   const [selectedItem, setSelectedItem] = useState(null); // Estado para el elemento seleccionado
+  const [selectedFile, setSelectedFile] = useState(null);
+  
+  useEffect(() => {
+    if (location.state && location.state.selectedFile) {
+      setSelectedFile(location.state.selectedFile);
+    }
+  }, [location.state]);
 
   const handleItemClick = (index) => {
     setSelectedItem(index === selectedItem ? null : index); // Cambiar el estado del elemento seleccionado
@@ -10,7 +20,14 @@ const PageResult = () => {
   return (
     <div className="section-container-result">    
       <div className="section-image">
-        <img className="image" src="image-reference.png" alt="Arrastra y suelta el PDF" />
+        {selectedFile && (
+          <iframe
+            src={URL.createObjectURL(selectedFile)}
+            width="800px"
+            height="800px"
+            title="Preview PDF"
+          ></iframe>
+        )}
       </div>
       <div className="card-list">
         <div className="card-category">
@@ -56,4 +73,4 @@ const PageResult = () => {
   );
 }
 
-export default PageResult;
+export default PageResult

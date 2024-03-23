@@ -29,7 +29,7 @@ body{
   }
   
   
-.section-container {
+.section-container-extraer {
     display: flex;
     align-items: center;
   }
@@ -41,7 +41,7 @@ body{
     align-items: flex-end; /* Centrar los cards horizontalmente */
 }
 
-.card {
+.card-extraer {
 
     display: flex;
     width: 100%;
@@ -52,13 +52,22 @@ body{
     transition: box-shadow 0.3s ease; /* Transición suave para el sombreado */
   }
   
-  .card:hover {
+  .card-extraer:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombreado al pasar el mouse */
     background-color: #0000002f;
   }
+  .card-extraer.selected1 {
+    background-color: #0000002f; /* Color de fondo cuando el elemento está seleccionado */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* También puedes ajustar el sombreado si lo deseas */
+  }
+  
 
-  .selected {
-    background-color: #0000002f;
+
+
+
+  .checkmark-img{
+    height: 50px;
+    width: 50px;
   }
   
 .card-title {
@@ -90,7 +99,7 @@ body{
     width: calc(100% - 100px);
   }
   
-  .title {
+  .title-extraer {
     font-size: 25px;
     font-weight: 600;
     text-align: left;
@@ -115,7 +124,7 @@ body{
     font-family: "Roboto";
   }
 
-  .button-YbY {
+  .button-extraer {
     margin-top: 20px;
     width: 300px;
     text-align: center;

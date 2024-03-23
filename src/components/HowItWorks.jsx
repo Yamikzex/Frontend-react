@@ -2,12 +2,12 @@ import React from 'react';
 
 const HowItWorks = () => {
   return (
-    <div className="section-container">
+    <div className="section-container2">
       <div className="section-how-it-works">
         <p className="title-HcJ">Cómo funciona</p>
       </div>
       <div className="card-list">
-        <div className="card">
+        <div className="card2">
           <div className="content-wrapper">
             <div className="image-container">
               <img className="image" src="select.png" alt="Selecciona el archivo" />
@@ -18,7 +18,7 @@ const HowItWorks = () => {
             </div>
           </div>
         </div>
-        <div className="card">
+        <div className="card2">
           <div className="content-wrapper">
             <div className="image-container">
               <img className="image" src="drop.png" alt="Arrastra y suelta el PDF" />
@@ -29,7 +29,7 @@ const HowItWorks = () => {
             </div>
           </div>
         </div>
-        <div className="card">
+        <div className="card2">
           <div className="content-wrapper">
             <div className="image-container">
               <img className="image" src="boton.png" alt="Extraer datos" />
