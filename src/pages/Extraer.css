@@ -141,3 +141,23 @@ body{
     font-size: 25px;
 
   }
+
+  .arrow-return{
+    height: 50px;
+    width: 50px;
+  }
+
+  .button-regresar{
+    background-color: #000000;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 820px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .button-regresar:hover{
+    background-color: rgb(34, 125, 153);
+    box-shadow: 0 0 10px rgb(113, 245, 245); /* Ajusta los valores según sea necesario */
+  }

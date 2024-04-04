@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.section-container-result {
+  display: flex;
+  align-items: center;
+}
+
+
+.card-image {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los cards */
+  width: 100%;
+  max-width: 650px;
+  height: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease; /* Transición suave para el sombreado */
+  align-items: center;
+}
+
+
+.card-result-text {
+  display: flex;
+  width: 100%;
+  max-width: 650px;
+  height: 810px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
+  overflow: hidden;
+  position: relative; /* Añade posición relativa */
+}
+
+
+.text-content-images {
+  padding: 20px;
+  width: calc(100% - 100px);
+  display: flex;
+}
+
+.title-images {
+  color: #000000;
+  font-size: 35px;
+  font-weight: 400;
+  text-align: left;
+  font-family: "Roboto";
+  margin-left: 240px;
+}
+
+.text-extracted{
+  font-size: 15px;
+  text-align: center;
+  padding: 30px;
+}
+
+
+.json-content {
+  display: flex; /* Establece el contenedor como un flexbox */
+  align-items: center; /* Centra verticalmente los elementos dentro del flexbox */
+
+}
+
+.image-copypaste {
+  width: 45px; /* Tamaño deseado en píxeles */
+  height: 45px; /* Tamaño deseado en píxeles */
+  cursor: pointer;
+  margin-left: 130px;
+  margin-top: 50px;
+
+}
+
+.image-download {
+  width: 45px; /* Tamaño deseado en píxeles */
+  height: 45px; /* Tamaño deseado en píxeles */
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+
+.home-return{
+  height: 35px;
+  width: 35px;
+  margin-top: 1px;
+  margin-left: 2px;
+}
+
+.button-home{
+  background-color: #000000;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  margin-bottom: 820px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.button-home:hover{
+  background-color: rgb(34, 125, 153);
+  box-shadow: 0 0 10px rgb(113, 245, 245); /* Ajusta los valores según sea necesario */
+}

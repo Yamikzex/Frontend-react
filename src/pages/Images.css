@@ -15,86 +15,46 @@ body {
   align-items: center;
 }
 
-.card-list {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: flex-end; /* Ajuste aquí para centrar horizontalmente */
-}
 
-.card-category {
-  background-color: #e4e4e4;
+.card-image {
+  background-color: #ffffff;
   display: flex;
   justify-content: center; /* Centra horizontalmente los cards */
   width: 100%;
   max-width: 650px;
-  height: 70px;
+  height: 100px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
   overflow: hidden;
   transition: box-shadow 0.3s ease; /* Transición suave para el sombreado */
   align-items: center;
-  cursor: pointer;
 }
 
 
-.card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombreado al pasar el mouse */
-  background-color: #0000002f;
-}
-
-.selected {
-  background-color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra al elemento seleccionado */
-}
-
-.selected .title-result {
-  color: #000000; /* Cambia el color del texto cuando se selecciona */
-}
-
-.card-json {
-  background-color: #ffffff;
+.card-result-images {
   display: flex;
   width: 100%;
   max-width: 650px;
-  height: 70px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
-  overflow: hidden;
-  transition: box-shadow 0.3s ease; /* Transición suave para el sombreado */
-  position: relative; /* Añade posición relativa */
-  z-index: 1; /* Asegura que esté por encima del card-result */
-  
-}
-
-.card-result {
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  width: 100%;
-  max-width: 650px;
-  height: 770px;
+  height: 810px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
   overflow: hidden;
   position: relative; /* Añade posición relativa */
 }
 
 
-
-.text-content-result {
+.text-content-images {
   padding: 20px;
   width: calc(100% - 100px);
 }
 
-.title-result {
-  color: #969696;
-  font-size: 25px;
+.title-images-contenido {
+  color: #000000;
+  font-size: 35px;
   font-weight: 400;
   text-align: left;
   font-family: "Roboto";
 }
 
-.message-sql{
-  font-size: 30px;
-  text-align: center;
-}
+
 
 .json-content {
   display: flex; /* Establece el contenedor como un flexbox */
@@ -107,18 +67,6 @@ body {
   height: 35px; /* Tamaño deseado en píxeles */
   cursor: pointer;
 }
-.image-json2 {
-  width: 35px; /* Tamaño deseado en píxeles */
-  height: 35px; /* Tamaño deseado en píxeles */
-  cursor: pointer;
-  margin-left: 551px;
-}
-
-.text-xls{
-  text-align: center;
-  font-size: 25px;
-}
-
 
 .image-copy {
   width: 35px; /* Tamaño deseado en píxeles */

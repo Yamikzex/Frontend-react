@@ -6,12 +6,19 @@ const Footer = () => {
       <div className="container-TeW">
         <div className="column-ZhY">
           <div className="auto-group-mdr8-gnA">
-            <img className="prosectoico-1-dBc" src="prosecto.jpg" alt="Logo" />
+            <a href="https://prosecto.com.co/" target="_blank">
+              <img className="prosectoico-1-dBc" src="prosecto.jpg" alt="Logo" />
+
+            </a>
             <p className="prospectiva-sectorial-y-datos-aplicados-9fk">Prospectiva sectorial y datos<br></br> aplicados</p>
           </div>
           <div className="social-media-RdG">
-            <img className="makerssocialmediaicons-AKx" src="twiter.png" alt="Social Media Icon" />
-            <img className="makerssocialmediaicons-tWr" src="lindein.png" alt="Social Media Icon" />
+           <a href="https://twitter.com/prosectosas" target="_blank">
+              <img className="makerssocialmediaicons-AKx" src="twiter.png" alt="Twitter Icon" />
+            </a>
+            <a href="https://www.linkedin.com/company/prosecto/about/" target="_blank">
+              <img className="makerssocialmediaicons-tWr" src="lindein.png" alt="LinkedIn Icon" />
+            </a>
           </div>
         </div>
         <div className="column-E4v">
@@ -21,19 +28,17 @@ const Footer = () => {
         <div className="column-ywc">
           <p className="productos-uaN">PRODUCTOS</p>
           <div className="navigation-links-S4W">
-            <p className="p-caracterizacin-yaE">P-Caracterización</p>
+            <p className="p-caracterizacin-yaE">P-Caracteriza</p>
             <p className="p-doc2db-5NN">P-Doc2DB</p>
           </div>
         </div>
         <div className="column-DDg">
-          <p className="servicios-Aei">SERVICIOS</p>
+          <p className="servicios-Aei">CONTACTO</p>
           <div className="navigation-links-u6W">
             <div className="auto-group-fj9t-TNv">
-              <p className="desarrollo-de-sistemas-Q3G">Desarrollo de Sistemas</p>
-              <p className="arquitectura-tecnolgico-LBp">Arquitectura Tecnológico</p>
-              <p className="modelos-de-gobierno-G5U">Modelos de Gobierno</p>
+              <p className="desarrollo-de-sistemas-Q3G"><b>Teléfono:</b> 300 4003205</p>
+              <p className="arquitectura-tecnolgico-LBp"><b>Email:</b> prosecto.sas@gmail.com</p>
             </div>
-            <p className="proceso-de-carga-de-datos-zGN">Proceso de Carga de Datos</p>
           </div>
         </div>
       </div>

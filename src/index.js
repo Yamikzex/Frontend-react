@@ -5,6 +5,8 @@ import Extraer from './pages/Extraer';
 import Result from './pages/Result';
 import App from './pages/App';
 import Main from './pages/Main';
+import Images from './pages/Images';
+import Text from './pages/Text';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

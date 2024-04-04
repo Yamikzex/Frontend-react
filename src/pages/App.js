@@ -9,6 +9,8 @@ import DataExtraction from '../components/DataExtraction';
 import HowItWorks from '../components/HowItWorks';
 import Footer from '../components/Footer';
 import Result from '../components/PageResult';
+import Images from '../components/PageImages';
+import Text from '../components/PageText';
 import PageMain from '../components/PageMain';
 
 const App = () => {
@@ -16,7 +18,8 @@ const App = () => {
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={
+         <Route path="/" element={<PageMain />} />
+          <Route path="/home" element={
             <>
               <Header />
               <DataExtraction />
@@ -27,7 +30,8 @@ const App = () => {
           } />
           <Route path="/extraer" element={<PageExtraer />} />
           <Route path="/result" element={<Result />} />
-          <Route path="/pageMain" element={<PageMain />} />
+          <Route path="/images" element={<Images />} />
+          <Route path="/text" element={<Text />} />
         </Routes>
       </div>
     </Router>

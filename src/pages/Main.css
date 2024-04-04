@@ -38,11 +38,17 @@ body{
     margin-left: 835px;
     margin-top: 85px;
   }
+
+  .primary-button:hover {
+    background-color: rgb(34, 125, 153);
+    box-shadow: 0 0 10px rgb(113, 245, 245); /* Ajusta los valores según sea necesario */
+  }
   
-  .primary-VFt {
+  
+  .primary-button {
     background-color: #000000;
     color: #ffffff;
-    padding: 15px 40px;
+    padding: 15px 100px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 25px;
@@ -65,3 +71,52 @@ body{
     z-index: -1; /* Coloca el contenedor detrás de los demás elementos */
     opacity: 40%;
   }
+
+.empresa{
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 600;
+  margin-bottom: 10px; /* Espacio inferior */
+  margin-right: 400px;
+}
+
+.columna-empresa {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.columna-prospectiva {
+  display: flex;
+  flex-direction: column;
+  margin-left: 400px;
+  
+}
+
+.icon-twiter{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 40px;
+  
+}
+.icon-linkein {
+  width: 40px;
+  height: 40px;
+  padding-left: 30px;
+  margin-bottom: 35px;
+} 
+
+.texto-prospectiva{
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 600;
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+.textos-empresa {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto";
+  margin-bottom: 5px; /* Espacio inferior */
+  padding-top: 7px;
+}

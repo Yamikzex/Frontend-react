@@ -64,18 +64,42 @@
 
 .button-YbY-extraer  {
   margin-top: 40px;
-  width: 250px;
+  width: 500px;
   text-align: center;
-  margin-left: 60px;
+  margin-left: 40px;
   margin-bottom: 30px;
+}
+
+.primary-VFt:hover {
+  background-color: rgb(34, 125, 153);
+  box-shadow: 0 0 10px rgb(113, 245, 245); /* Ajusta los valores según sea necesario */
 }
 
 .primary-VFt {
   background-color: #000000;
   color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 15px 60px;
+  border-radius: 10px;
   cursor: pointer;
+}
+.spinner {
+  position: relative;
+  text-align: center;
+}
+
+.loader {
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 
@@ -275,6 +299,7 @@
 .prosectoico-1-dBc {
   width: 75px;
   height: auto; /* Para mantener la proporción */
+  margin-left: 90px;
 }
 
 .makerssocialmediaicons-AKx{
