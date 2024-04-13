@@ -12,6 +12,8 @@ import Result from '../components/PageResult';
 import Images from '../components/PageImages';
 import Text from '../components/PageText';
 import PageMain from '../components/PageMain';
+import XmlToPdf from '../components/XmlToPdf';
+import XmlResult from '../components/XmlResult';
 
 const App = () => {
   return (
@@ -32,6 +34,8 @@ const App = () => {
           <Route path="/result" element={<Result />} />
           <Route path="/images" element={<Images />} />
           <Route path="/text" element={<Text />} />
+          <Route path="/xml" element={<XmlToPdf />} />
+          <Route path="/xmlResult" element={<XmlResult />} />
         </Routes>
       </div>
     </Router>

@@ -7,6 +7,8 @@ import App from './pages/App';
 import Main from './pages/Main';
 import Images from './pages/Images';
 import Text from './pages/Text';
+import Xml from './pages/XmlToPdf';
+import XmlResult from './pages/XmlResultPage';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -12,13 +12,14 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
+
 .title-main {
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Roboto";
-  text-align: center; /* Centrar el texto */
+  text-align: start; /* Centrar el texto */
   margin-top: 220px;
-  width: 1130px;
-  margin-left: 430px;
+  width: 600px;
+  margin-left: 260px;
 }
 
 .section-image-main {
@@ -32,10 +33,16 @@ body{
   text-align: center; /* Centrar la imagen */
 }
 
+.button-main2{
+  width: 300px;
+  text-align: center;
+  margin-left: 380px;
+  margin-top: 115px;
+}
 .button-main {
     width: 300px;
     text-align: center;
-    margin-left: 835px;
+    margin-left: 380px;
     margin-top: 85px;
   }
 
@@ -44,7 +51,15 @@ body{
     box-shadow: 0 0 10px rgb(113, 245, 245); /* Ajusta los valores según sea necesario */
   }
   
+  .columna-login {
+    display: flex; /* Usa flexbox para alinear los elementos en una fila */
+    flex-direction : row;
+    
+  }
   
+  
+  
+
   .primary-button {
     background-color: #000000;
     color: #ffffff;
