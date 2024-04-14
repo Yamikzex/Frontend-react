@@ -10,6 +10,8 @@ import MainSection from '../components/MainSection';
 import PageExtraer from '../components/PageExtraer';
 import Images from '../components/PageImages';
 import PageMain from '../components/PageMain';
+import Result from '../components/PageResult';
+import Text from '../components/PageText';
 import XmlResult from '../components/XmlResult';
 import XmlToPdf from '../components/XmlToPdf';
 
