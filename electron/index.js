@@ -43,7 +43,9 @@ function createWindow() {
 
 // Evento activado cuando Electron ha terminado de inicializarse y está listo para crear ventanas del navegador.
 app.whenReady().then(() => {
-  startLocalServer();
+  if (app.isPackaged) {
+    startLocalServer();
+  }
   createWindow();
 
   app.on('activate', function () {
