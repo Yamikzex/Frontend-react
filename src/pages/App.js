@@ -10,31 +10,30 @@ import MainSection from '../components/MainSection';
 import PageExtraer from '../components/PageExtraer';
 import Images from '../components/PageImages';
 import PageMain from '../components/PageMain';
-import Result from '../components/PageResult';
-import Text from '../components/PageText';
+import XmlResult from '../components/XmlResult';
+import XmlToPdf from '../components/XmlToPdf';
 
 const App = () => {
   return (
     <HashRouter basename='/'>
       <div>
         <Routes>
-          <Route path='/' element={<PageMain />} />
-          <Route
-            path='/home'
-            element={
-              <>
-                <Header />
-                <DataExtraction />
-                <HowItWorks />
-                <MainSection />
-                <Footer />
-              </>
-            }
-          />
-          <Route path='/extraer' element={<PageExtraer />} />
-          <Route path='/result' element={<Result />} />
-          <Route path='/images' element={<Images />} />
-          <Route path='/text' element={<Text />} />
+         <Route path="/" element={<PageMain />} />
+          <Route path="/home" element={
+            <>
+              <Header />
+              <DataExtraction />
+              <HowItWorks />
+              <MainSection />
+              <Footer />
+            </>
+          } />
+          <Route path="/extraer" element={<PageExtraer />} />
+          <Route path="/result" element={<Result />} />
+          <Route path="/images" element={<Images />} />
+          <Route path="/text" element={<Text />} />
+          <Route path="/xml" element={<XmlToPdf />} />
+          <Route path="/xmlResult" element={<XmlResult />} />
         </Routes>
       </div>
     </HashRouter>

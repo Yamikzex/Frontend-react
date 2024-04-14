@@ -1,0 +1,89 @@
+.arrow-return-xml{
+    height: 50px;
+    width: 50px;
+  }
+
+  .button-regresar-xml{
+    background-color: #000000;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 820px;
+    margin-top: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .arrow-home{
+    height: 40px;
+    width: 40px;
+  }
+
+
+  .button-regresar-xml:hover{
+    background-color: rgb(34, 125, 153);
+    box-shadow: 0 0 10px rgb(113, 245, 245); /* Ajusta los valores según sea necesario */
+  }
+
+  .section-image {
+    width: fit-content; /* Ajustar el ancho al contenido */
+    display: inline-block; /* Para que el contenedor se ajuste al tamaño de la imagen */
+    position: relative; /* Agregar posición relativa para que el contenedor de la imagen sea el contexto de la sombra */
+    margin-left: 200px;
+  }
+  
+  .section-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajustar el ancho al 100% del contenedor */
+    height: 100%; /* Ajustar la altura al 100% del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.596); /* Aplicar sombra alrededor de la imagen */
+    z-index: -1; /* Colocar la sombra detrás de la imagen */
+  }
+  
+  
+.section-container-extraer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Cambiado de 70% a 100% */
+    align-items: flex-end; /* Centrar los cards horizontalmente */
+}
+
+.section-container-extraer-xml {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Cambiado de 70% a 100% */
+    align-items: flex-end; /* Centrar los cards horizontalmente */
+}
+
+.section-image-xml-pdf {
+    width: fit-content; /* Ajustar el ancho al contenido */
+    display: inline-block; /* Para que el contenedor se ajuste al tamaño de la imagen */
+    position: relative; /* Agregar posición relativa para que el contenedor de la imagen sea el contexto de la sombra */
+    margin-left: 400px;
+  }
+  
+  .section-image-xml-pdf::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajustar el ancho al 100% del contenedor */
+    height: 100%; /* Ajustar la altura al 100% del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.596); /* Aplicar sombra alrededor de la imagen */
+    z-index: -1; /* Colocar la sombra detrás de la imagen */
+  }
+  
+  
