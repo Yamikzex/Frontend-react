@@ -74,7 +74,7 @@ const XmlToPdf = () => {
         <div className="container-xml">
           <div className="auto-group-gwfg-NU6">
             <p className="title-xml">Extracción de datos admitida</p>
-            <p className="description-xml">Esta herramienta permite convertir datos de XML a PDF.</p>
+            <p className="description-xml">Esta herramienta permite convertir datos de XML a texto plano o XMLS.</p>
           </div>
           <div className="list-xml">
             <div className="card-xml">
@@ -82,8 +82,8 @@ const XmlToPdf = () => {
                 <img className="image-xml" src="xml-pdf.png" alt="Tablas" />
               </div>
               <div className="text-content-xml">
-                <p className="title-xml2">XML A PDF</p>
-                <p className="subtitle-xml">Convertir XML a PDF</p>
+                <p className="title-xml2">XML A TXT</p>
+                <p className="subtitle-xml">Convertir XML a TXT</p>
               </div>
             </div>
           </div>
@@ -100,18 +100,18 @@ const XmlToPdf = () => {
                 </div>
                 <div className="text-content">
                   <p className="title">Arrastra y suelta o selecione el archivo XML</p>
-                  <p className="subtitle">Simplemente arrastre y suelte su archivo XML para convertirlo a PDF.</p>
+                  <p className="subtitle">Simplemente arrastre y suelte su archivo XML para convertirlo a TXT.</p>
                 </div>
               </div>
             </div>
             <div className="card2">
               <div className="content-wrapper">
                 <div className="image-container">
-                  <img className="image" src="pdf.png" alt="Selecciona el archivo" />
+                  <img className="image" src="txt.png" alt="Selecciona el archivo" />
                 </div>
                 <div className="text-content">
                   <p className="title">Visualice su resultado</p>
-                  <p className="subtitle">Observe el resultado de su archivo XML a PDF.</p>
+                  <p className="subtitle">Observe el resultado de su archivo XML a TXT.</p>
                 </div>
               </div>
             </div>
@@ -126,9 +126,9 @@ const XmlToPdf = () => {
         >
           <div className="background-xml">
             <div className="container-xml">
-              <p className="title-xmlextraer">Extraer datos de PDF</p>
+              <p className="title-xmlextraer">Extraer datos de XML</p>
               <p className="description-xml2">
-                Convierte datos de PDF a formato JSON, XLS o llévelo a su base de datos  <br /> Con tecnología de Prosecto{' '}
+                Convierte datos de XML a formato TXT<br /> Con tecnología de Prosecto{' '}
               </p>
               {!isLoading && (
                 <>

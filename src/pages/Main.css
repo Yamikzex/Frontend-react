@@ -16,10 +16,32 @@ body{
 .title-main {
   font-size: 30px;
   font-family: "Roboto";
-  text-align: start; /* Centrar el texto */
-  margin-top: 220px;
+  text-align: center; /* Centrar el texto */
+  margin-top: 20px;
   width: 600px;
-  margin-left: 260px;
+  margin-left: 25px;
+}
+
+.title-main2 {
+  font-size: 30px;
+  font-family: "Roboto";
+  text-align: center; /* Centrar el texto */
+  margin-top: 20px;
+  width: 600px;
+  margin-left: 25px;
+}
+
+.container-main {
+  width: 650px; /* Ancho de 330px */
+  height: 550px; /* Alto de 320px */
+  border-radius: 10px; /* Añadir bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.562); /* Añadir sombra */
+  overflow: hidden; /* Ocultar el desbordamiento */
+  margin-left: 210px;
+  margin-top: 200px;
+  display: flex; /* Hacer que el contenedor de la tarjeta sea un flexbox */
+  flex-direction: column; /* Alinear los elementos de arriba a abajo */
+  justify-content: center; /* Centrar verticalmente los elementos */
 }
 
 .section-image-main {
@@ -36,14 +58,14 @@ body{
 .button-main2{
   width: 300px;
   text-align: center;
-  margin-left: 380px;
-  margin-top: 115px;
+  margin-left: 180px;
+  margin-top: 105px;
 }
 .button-main {
     width: 300px;
     text-align: center;
-    margin-left: 380px;
-    margin-top: 85px;
+    margin-left: 168px;
+    margin-top: 5px;
   }
 
   .primary-button:hover {

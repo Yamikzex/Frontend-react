@@ -4,7 +4,8 @@ const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const localServerApp = express();
-const PORT = app.isPackaged ? 30000 : 3000;
+const PORT = 3000;
+
 
 const startLocalServer = (done) => {
   localServerApp.use(express.json({ limit: '100mb' }));

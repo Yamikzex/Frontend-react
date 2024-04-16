@@ -27,7 +27,7 @@ const PageMain = () => {
       </div>
      <div>
      <div className='columna-login'>
-        <div>
+        <div className='container-main'>
         <div className="text-title">
               <p className="title-main">Este producto permite extraer información de documentos PDF y llevarla a datos estructurados. Está pensado para extraer información de todo tipo de documentos, como facturas, órdenes de compra, informes de laboratorio, encuestas a clientes. Permite disminuir la carga operativa para usar los datos una vez que la información es extraída.</p>
             </div>
@@ -35,9 +35,9 @@ const PageMain = () => {
               <button className="primary-button">Abrir</button>
             </div>
         </div>
-        <div>
+        <div  className='container-main'>
           <div className="text-title">
-            <p className="title-main">Este producto transforma datos estructurados de archivos XML a texto plano o archivos XMLS. Esta transformación busca permitir operar sobre los datos de las facturas devueltos por la DIAN en el contexto de facturación electronica.</p>
+            <p className="title-main2">Este producto transforma datos estructurados de archivos XML a texto plano o archivos XMLS. Esta transformación busca permitir operar sobre los datos de las facturas devueltos por la DIAN en el contexto de facturación electronica.</p>
           </div>
           <div className="button-main2"  onClick={handleButtonXml}>
             <button className="primary-button">Abrir</button>

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "electron": "electron .",
-    "package": "electron-packager . Pc-Docuval Frontend --platform=win32 --arch=x64 --out=ejecutable --overwrite"
+    "package": "electron-packager . Pc-Docuval Frontend --platform=win32 --arch=x64 --out=ejecutable --icon=prosecto.ico --overwrite"
   },
   "dependencies": {
     "cors": "^2.8.5",

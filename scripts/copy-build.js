@@ -22,7 +22,7 @@ function deleteFolder(dirPath, callback) {
       handleError(err);
       return;
     }
-    if (files || !files.length) {
+    if (!!files || !files.length) {
       // Empty folder, delete it
       fs.rmdir(dirPath, callback);
     } else {
