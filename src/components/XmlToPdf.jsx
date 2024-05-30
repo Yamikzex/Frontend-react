@@ -15,23 +15,23 @@ const XmlToPdf = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [isDragOver, setIsDragOver] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [textoPlano, setTextoPlano] = useState("");
 
   const handleFileUpload = async (file) => {
     setIsLoading(true);
     const formData = new FormData();
     formData.append('file', file);
     try {
-      const response = await axios.post('http://localhost:8000/uploadfile/', formData, {
+      const response = await axios.post('http://localhost:8000/uploadXML/', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
       });
-      console.log(response.data.message);
+      navigate('/xmlResult', { state: { selectedFile: file, textoPlano: response.data.texto_plano } });
     } catch (error) {
       console.error('Error:', error);
     }
     setIsLoading(false);
-    navigate('/xmlResult', { state: { selectedFile: file } });
   };
 
   const handleDragEnter = (event) => {
@@ -64,7 +64,7 @@ const XmlToPdf = () => {
   return (
     <div>
       <div className="header-cc6"> 
-        <img className="prosectoico-1-3qp" src="prosecto.jpg" alt="Logo" />
+        <img className="prosectoico-1-3qp" src="prosecto.png" alt="Logo" />
         <p className="title-9dx">Prosecto</p>
         <button className="button-regresar-login" onClick={handleButtonReturn}>
         <img className='arrow-home' src="home.png" alt="Regresar" />         
@@ -133,7 +133,7 @@ const XmlToPdf = () => {
               {!isLoading && (
                 <>
                   <div className="button-xml-extraer">
-                    <input type="file" accept=".pdf" onChange={(event) => handleFileUpload(event.target.files[0])} style={{ display: 'none' }} id="file-upload" />
+                    <input type="file" accept=".xml" onChange={(event) => handleFileUpload(event.target.files[0])} style={{ display: 'none' }} id="file-upload" />
                     <label htmlFor="file-upload" className="primary-xml">
                       Seleccionar archivo
                     </label>

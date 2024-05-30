@@ -20,6 +20,16 @@
   }
 
 
+  .card-result-xml {
+    display: flex;
+    width: 100%;
+    max-width: 750px;
+    height: 810px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
+    overflow: hidden;
+    position: relative; /* Añade posición relativa */
+  }
+  
   .button-regresar-xml:hover{
     background-color: rgb(34, 125, 153);
     box-shadow: 0 0 10px rgb(113, 245, 245); /* Ajusta los valores según sea necesario */
@@ -72,7 +82,7 @@
     width: fit-content; /* Ajustar el ancho al contenido */
     display: inline-block; /* Para que el contenedor se ajuste al tamaño de la imagen */
     position: relative; /* Agregar posición relativa para que el contenedor de la imagen sea el contexto de la sombra */
-    margin-left: 400px;
+    margin-left: 40px;
   }
   
   .section-image-xml-pdf::after {
@@ -87,3 +97,24 @@
   }
   
   
+  .card-image-xml {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los cards */
+    width: 100%;
+    max-width: 750px;
+    height: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease; /* Transición suave para el sombreado */
+    align-items: center;
+  }
+  
+  .title-images-xml {
+    color: #000000;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: left;
+    font-family: "Roboto";
+    margin-left: 240px;
+  }

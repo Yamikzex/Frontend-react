@@ -10,7 +10,7 @@ const Header = () => {
   };
   return (
     <div className="header-cc6"> 
-      <img className="prosectoico-1-3qp" src="prosecto.jpg" alt="Logo" />
+      <img className="prosectoico-1-3qp" src="prosecto.png" alt="Logo" />
       <p className="title-9dx">Prosecto</p>
       <button className="button-regresar-login" onClick={handleButtonReturn}>
         <img className='arrow-home' src="home.png" alt="Regresar" />         

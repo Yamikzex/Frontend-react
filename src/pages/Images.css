@@ -110,3 +110,24 @@ body {
   background-color: rgb(34, 125, 153);
   box-shadow: 0 0 10px rgb(113, 245, 245); /* Ajusta los valores según sea necesario */
 }
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta el tamaño de las columnas según el contenido */
+  gap: 10px; /* Espacio entre las imágenes */
+}
+
+.image-frame {
+  border: 1px solid #ccc; /* Marco alrededor de la imagen */
+  padding: 5px; /* Espacio interno del marco */
+}
+
+.image-frame img {
+  width: 100%; /* Imagen ajustada al 100% del tamaño del contenedor */
+  height: auto; /* Altura automática para mantener la relación de aspecto */
+}
+
+.card-result-images {
+  overflow-y: auto; /* Agrega un scroll vertical si el contenido es más grande que el contenedor */
+  max-height: 800px; /* Altura máxima del contenedor antes de que aparezca el scroll */
+}
